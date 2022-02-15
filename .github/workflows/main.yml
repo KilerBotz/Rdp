@@ -5,9 +5,9 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 9999
     steps:
-    - name: Download Linux.
+    - name: Download ngrok.
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.tgz -OutFile linux.zip
+        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.tgz -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/KilerBotz/Rdp/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/KilerBotz/Rdp/main/download.jpeg -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/KilerBotz/Rdp/main/loop.bat -OutFile loop.bat
